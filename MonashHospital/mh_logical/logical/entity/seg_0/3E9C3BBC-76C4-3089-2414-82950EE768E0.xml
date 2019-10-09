@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E9C3BBC-76C4-3089-2414-82950EE768E0" name="COST CENTER">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:20:43 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="centerCode" id="F458BB59-727D-8071-E97C-A14095F7934B">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:49:06 UTC</createdTime>
+<commentInRDBMS>Cost center code</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cennterTitle" id="A2AF1EEE-39F2-2948-8C4A-399FF0AA7EA1">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:49:17 UTC</createdTime>
+<commentInRDBMS>Center&apos;s title</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="canterManager" id="4EB87545-98FB-886E-CE5C-F24625A8C33D">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:49:35 UTC</createdTime>
+<commentInRDBMS>Cneter&apos;s manager name</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C5F17009-482F-2B50-F84F-C799A8BD7AE5" name="COST CENTER PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:49:15 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F458BB59-727D-8071-E97C-A14095F7934B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

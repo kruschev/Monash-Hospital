@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9AFE1FF3-22C9-9EA6-0829-3BF7EA6CDAC4" name="BED">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:19:09 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="wardCode" id="B732C036-989C-332A-0D08-855447441E1C">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:32:41 UTC</createdTime>
+<commentInRDBMS>Ward code</commentInRDBMS>
+<generatorID>EADCEB47-0084-6655-D9FC-BD066014FEF3</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>B7CAE337-1E21-FEF5-56DB-F66741C3A2AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bedNum" id="55B4A630-8E1C-BAAA-C387-E2BC13B7DB4F">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:24:35 UTC</createdTime>
+<commentInRDBMS>Bed number</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bedPhone" id="2FBE194A-0073-7FF1-E8D8-03FB2A0694B5">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:31:39 UTC</createdTime>
+<commentInRDBMS>Bed phone number</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bedType" id="B88FEB06-3513-5E7A-56B8-AA95FD919CA6">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:24:45 UTC</createdTime>
+<commentInRDBMS>Bed type</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E6771BED-AA21-E9F3-1F08-08A54062C7F1" name="BED PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:24:39 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55B4A630-8E1C-BAAA-C387-E2BC13B7DB4F</attributeRef>
+<attributeRef>B732C036-989C-332A-0D08-855447441E1C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FBEAD388-76F6-99CF-63A5-0D6AEE781A3C" name="ALLOCATION">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:10:04 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nurseID" id="9C9AA357-67E3-7A26-9AB7-52D83E2306E7">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:25:06 UTC</createdTime>
+<commentInRDBMS>Nurse ID</commentInRDBMS>
+<generatorID>4CA802BC-CD3B-1231-C55E-8653AF257F15</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>BCED73E7-5136-A30A-27F3-0490815D7926</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="startDate" id="2AAC87ED-32F5-DB74-A64D-A7B5D522B327">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:32:18 UTC</createdTime>
+<commentInRDBMS>The initial date a nurse is assigned to work in a ward</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="endDate" id="3A8F0E69-BCD3-FDF7-EC09-97CB4BA9E3EF">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:10:23 UTC</createdTime>
+<commentInRDBMS>The date a nurse finished working  in a ward</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wardCode" id="303BF0BF-B8CD-345C-45FD-32A42D0E8A0B">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:26:08 UTC</createdTime>
+<commentInRDBMS>Ward code</commentInRDBMS>
+<generatorID>F998F37E-A79D-D665-0582-59F3379A1B59</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>B7CAE337-1E21-FEF5-56DB-F66741C3A2AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6634B670-A1DE-D3F3-45C8-705831ECC11D" name="NURSE ALLOCATION PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:25:06 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C9AA357-67E3-7A26-9AB7-52D83E2306E7</attributeRef>
+<attributeRef>2AAC87ED-32F5-DB74-A64D-A7B5D522B327</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

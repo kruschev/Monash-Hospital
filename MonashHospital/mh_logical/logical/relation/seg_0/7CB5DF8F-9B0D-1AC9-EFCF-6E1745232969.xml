@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="doctor_perform_procedure" directorySegmentName="seg_0" id="7CB5DF8F-9B0D-1AC9-EFCF-6E1745232969">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:42:32 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>A90C288C-FEC3-548C-83DA-159F1D03501E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>performs</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4BF59CBC-FD34-6EAF-9DBD-3B13CAC911C5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2DB3A53-BF3C-7DAB-2969-50BCDAE3F84B</targetEntity>
+<transferable>true</transferable>
+</Relation>

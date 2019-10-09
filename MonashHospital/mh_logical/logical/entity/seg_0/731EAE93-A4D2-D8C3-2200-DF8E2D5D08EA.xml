@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="731EAE93-A4D2-D8C3-2200-DF8E2D5D08EA" name="SPECIALISATION">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:34:23 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="doctorID" id="313794F9-5339-D55D-65BD-8C058CA6BF0C">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:34:57 UTC</createdTime>
+<commentInRDBMS>Doctor ID</commentInRDBMS>
+<generatorID>59F660F4-A18A-97FC-1F21-BDAC233C78DB</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>4B2068DA-1B5B-AB55-6A38-73AA0CA22E5D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="specName" id="7D7A3B31-D932-4BFC-87A3-1872EB2CB30D">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:34:38 UTC</createdTime>
+<commentInRDBMS>Specialisation name</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23C9FE88-CEAC-95EE-D81B-069B22C7954F" name="SPECIALISATION PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:34:44 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7D7A3B31-D932-4BFC-87A3-1872EB2CB30D</attributeRef>
+<attributeRef>313794F9-5339-D55D-65BD-8C058CA6BF0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

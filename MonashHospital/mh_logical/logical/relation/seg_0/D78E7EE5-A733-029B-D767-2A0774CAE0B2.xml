@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="admission_procedure" directorySegmentName="seg_0" id="D78E7EE5-A733-029B-D767-2A0774CAE0B2">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 11:56:48 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>9E82789D-B5B1-346B-2BD5-B4130F9E4D0A</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>attends</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>54550419-C415-45CC-E97C-79C57B52E6F4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2DB3A53-BF3C-7DAB-2969-50BCDAE3F84B</targetEntity>
+<transferable>true</transferable>
+</Relation>

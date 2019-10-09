@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C0F7D7C-77AF-3ED0-DF9F-4AFD910819FB" name="COST_CENTER">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>3E9C3BBC-76C4-3089-2414-82950EE768E0</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="centerCode" id="A3985428-FCE7-E639-25FF-33C5373F3042">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Cost center code</commentInRDBMS>
+<generatorID>F458BB59-727D-8071-E97C-A14095F7934B</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="cennterTitle" id="35440E82-CE25-7A07-F234-F27F480433A0">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Center&apos;s title</commentInRDBMS>
+<generatorID>A2AF1EEE-39F2-2948-8C4A-399FF0AA7EA1</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="canterManager" id="45089296-5BB6-EAE4-C2CE-77BE516EA7ED">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Cneter&apos;s manager name</commentInRDBMS>
+<generatorID>4EB87545-98FB-886E-CE5C-F24625A8C33D</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8ED4AED6-27E7-9BA1-1B58-EA9A8FA1F475" name="COST_CENTER_PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>C5F17009-482F-2B50-F84F-C799A8BD7AE5</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3985428-FCE7-E639-25FF-33C5373F3042"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

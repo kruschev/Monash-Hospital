@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="admission_newbed" directorySegmentName="seg_0" id="02EDF672-C0CF-FC0A-551B-E571EEC5FDF4">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:34:19 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>9E82789D-B5B1-346B-2BD5-B4130F9E4D0A</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>changes to</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>54550419-C415-45CC-E97C-79C57B52E6F4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F3891B21-BBB6-FDDA-E68A-AFA934DE4265</targetEntity>
+<transferable>true</transferable>
+</Relation>

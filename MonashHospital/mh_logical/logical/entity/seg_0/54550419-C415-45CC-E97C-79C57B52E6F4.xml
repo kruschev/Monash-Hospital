@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54550419-C415-45CC-E97C-79C57B52E6F4" name="ADMISSION">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 17:24:23 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="patientID" id="F2C30931-889C-230B-B5DC-0589FCFCB542">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:09:47 UTC</createdTime>
+<commentInRDBMS>Unique patient ID</commentInRDBMS>
+<generatorID>B8A334E5-F8B1-F091-8A5F-683D330CB742</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>87707804-2DCD-F540-CBBB-08F82E61F07A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="admissionDate" id="8007F6B3-B9D0-5F55-E184-18E12AA5C73B">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 17:24:40 UTC</createdTime>
+<commentInRDBMS>Date and time of patient&apos;s admission</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dischargeDate" id="E364AC71-B33C-BFA2-8D9D-571AA2BBD04E">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 17:25:43 UTC</createdTime>
+<commentInRDBMS>Date and time of patient&apos;s discharge</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="doctorID" id="0FA4F6E7-9E7D-8A97-4154-E2C05E9D2F4E">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:17:28 UTC</createdTime>
+<commentInRDBMS>Doctor ID</commentInRDBMS>
+<generatorID>656D3E89-674B-B408-BA1D-CDFC9C96ADFC</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>4B2068DA-1B5B-AB55-6A38-73AA0CA22E5D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bedNum" id="9AB3C103-AD13-FC80-3511-1CEF60559768">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:39:25 UTC</createdTime>
+<commentInRDBMS>Bed number</commentInRDBMS>
+<generatorID>85B9470F-17CD-D129-3DD8-80D09204CA1F</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>55B4A630-8E1C-BAAA-C387-E2BC13B7DB4F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wardCode" id="C12CB7A7-5757-B9EC-FA00-BBDB294AB73E">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:39:25 UTC</createdTime>
+<commentInRDBMS>Ward code</commentInRDBMS>
+<generatorID>85B9470F-17CD-D129-3DD8-80D09204CA1F</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>B732C036-989C-332A-0D08-855447441E1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9E82789D-B5B1-346B-2BD5-B4130F9E4D0A" name="ADMISSION PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 17:24:58 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8007F6B3-B9D0-5F55-E184-18E12AA5C73B</attributeRef>
+<attributeRef>F2C30931-889C-230B-B5DC-0589FCFCB542</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

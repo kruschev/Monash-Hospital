@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="104F754B-5C69-929C-8B5A-FC1C6C927972" containerWithKeyObject="F425A170-5C4B-93C1-29BD-1454F3D3A0DB" localFKIndex="3523990E-7DF4-DDC6-4E8C-2BF16824A183" name="costcenter_item">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>4AE742E2-F219-2026-FF00-38C98657D34B</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<referredTableLongName>COST_CENTER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8C0F7D7C-77AF-3ED0-DF9F-4AFD910819FB</referredTableID>
+<keyObject>8ED4AED6-27E7-9BA1-1B58-EA9A8FA1F475</keyObject>
+<referredKeyID>8ED4AED6-27E7-9BA1-1B58-EA9A8FA1F475</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>centerCode</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

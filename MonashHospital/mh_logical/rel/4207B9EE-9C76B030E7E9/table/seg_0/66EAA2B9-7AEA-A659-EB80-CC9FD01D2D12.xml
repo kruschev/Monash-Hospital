@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66EAA2B9-7AEA-A659-EB80-CC9FD01D2D12" name="PATIENT">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>3C3FDAD4-5B86-0B7D-A9F0-7863596D4A4E</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="patientID" id="AFD1EF25-DD6F-BDC2-A2AB-6FD681BD11B5">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Unique patient ID</commentInRDBMS>
+<generatorID>87707804-2DCD-F540-CBBB-08F82E61F07A</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="firstName" id="62FA7E79-8109-E1B4-ACEF-0C8CA05AEA64">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Patient&apos;s first name</commentInRDBMS>
+<generatorID>35B371D0-8C00-3A34-9916-F38EFBD6018A</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastName" id="4B7AFD29-98B2-C1B5-AEC3-58CFF984EDA7">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Patient&apos;s last name</commentInRDBMS>
+<generatorID>4C2B3F52-BE39-A8C7-8619-F1812AD39EDD</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dateOfBirth" id="303175D7-D6F6-3D3A-A13D-9E84BF2971A1">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Patient&apos;s date of birth</commentInRDBMS>
+<generatorID>C19A2347-BEB8-8BA4-0B0E-D427F2FC5DBE</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contactNum" id="34DDC40A-1070-4D5E-2FD8-E239743A3269">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Patient&apos;s emergency contact number</commentInRDBMS>
+<generatorID>053531B8-1532-872C-0E29-5BCABD715442</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E413CE1-5569-1210-F84A-BEAB61BC5959" name="PATIENT_PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>F81F2695-4DDF-2E92-5786-919763237F8A</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFD1EF25-DD6F-BDC2-A2AB-6FD681BD11B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

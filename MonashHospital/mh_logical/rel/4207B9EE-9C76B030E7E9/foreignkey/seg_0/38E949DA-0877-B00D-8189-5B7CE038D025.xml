@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38E949DA-0877-B00D-8189-5B7CE038D025" containerWithKeyObject="89D1821D-FEE8-82AC-29D8-D86B8AF5E927" localFKIndex="F1EE7765-178B-9FF7-12C0-96BDCFBA89F0" name="procedureinfo_procedure">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>3D8E07EA-B085-9D9D-5FD1-5CE9547DB4D1</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<referredTableLongName>PROCEDURE_INFORMATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>772D22C1-E943-8311-7156-94D2A7CD0B0E</referredTableID>
+<keyObject>E451D5CB-2193-6974-E159-8446731AD832</keyObject>
+<referredKeyID>E451D5CB-2193-6974-E159-8446731AD832</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>procCode</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

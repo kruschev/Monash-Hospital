@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="79C1CFE6-A321-4C8C-A0C3-317E2BEBC7A8" containerWithKeyObject="7F02D6DF-9285-1547-DD3B-AA3CCE3B9E84" localFKIndex="194B4A50-0D35-0AE3-8A0E-41BA5C746BCC" name="ward_allocation">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>F998F37E-A79D-D665-0582-59F3379A1B59</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<referredTableLongName>WARD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D245B6DC-34BF-BDAC-F9B8-C02E458B87DB</referredTableID>
+<keyObject>466D96B4-D3F4-0B1D-2C00-EBF66F27FE4F</keyObject>
+<referredKeyID>466D96B4-D3F4-0B1D-2C00-EBF66F27FE4F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>wardCode</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

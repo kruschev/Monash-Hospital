@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2DB3A53-BF3C-7DAB-2969-50BCDAE3F84B" name="PROCEDURE">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:19:41 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="patientID" id="BAD2206B-CDB7-3E7B-C712-63BE79227C15">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 11:56:48 UTC</createdTime>
+<commentInRDBMS>Unique patient ID</commentInRDBMS>
+<generatorID>D78E7EE5-A733-029B-D767-2A0774CAE0B2</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>F2C30931-889C-230B-B5DC-0589FCFCB542</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procDate" id="6DAC861A-4E52-3467-56B7-CE840C9C71EC">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:39:43 UTC</createdTime>
+<commentInRDBMS>Date and time procedure is performed</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procCode" id="DA057B3A-1205-C55E-6CFC-9DAF0DE0AB00">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:38:14 UTC</createdTime>
+<commentInRDBMS>Procedure code</commentInRDBMS>
+<generatorID>3D8E07EA-B085-9D9D-5FD1-5CE9547DB4D1</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>50D5D1A4-8C4F-18CF-4667-4ED04364DD68</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reqDoctorID" id="19AD3053-5091-78C5-BB4F-005C8103C054">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:41:11 UTC</createdTime>
+<commentInRDBMS>Doctor ID</commentInRDBMS>
+<generatorID>11F6D856-722A-E193-2D3F-FED8023E0F1C</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>4B2068DA-1B5B-AB55-6A38-73AA0CA22E5D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="perfDoctorID" id="C433FAF5-4742-981C-0AFB-63BE3B90C269">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:42:32 UTC</createdTime>
+<commentInRDBMS>Doctor ID</commentInRDBMS>
+<generatorID>7CB5DF8F-9B0D-1AC9-EFCF-6E1745232969</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4B2068DA-1B5B-AB55-6A38-73AA0CA22E5D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="extraTotalCharge" id="6D5D5BA0-4C00-8D01-5E2D-A8A537A54CD4">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:47:21 UTC</createdTime>
+<commentInRDBMS>Total charged fees for extra items</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="extraTotalCharge &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="admissionDate" id="25DFE948-C068-4554-55A8-5399C223E7B7">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 11:56:48 UTC</createdTime>
+<commentInRDBMS>Date and time of patient&apos;s admission</commentInRDBMS>
+<generatorID>D78E7EE5-A733-029B-D767-2A0774CAE0B2</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>8007F6B3-B9D0-5F55-E184-18E12AA5C73B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8AF6A56B-C60C-B341-1145-B9A7A98DA50A" name="PROCEDURE PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 05:08:28 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6DAC861A-4E52-3467-56B7-CE840C9C71EC</attributeRef>
+<attributeRef>25DFE948-C068-4554-55A8-5399C223E7B7</attributeRef>
+<attributeRef>BAD2206B-CDB7-3E7B-C712-63BE79227C15</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

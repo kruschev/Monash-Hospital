@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ward_allocation" directorySegmentName="seg_0" id="F998F37E-A79D-D665-0582-59F3379A1B59">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:26:08 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>5651CB54-4A00-01EA-9CEA-D43AA5C0D3C1</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>is allocated with</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B06D5AA5-A006-F629-4889-51E6AD5E8387</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FBEAD388-76F6-99CF-63A5-0D6AEE781A3C</targetEntity>
+<transferable>true</transferable>
+</Relation>

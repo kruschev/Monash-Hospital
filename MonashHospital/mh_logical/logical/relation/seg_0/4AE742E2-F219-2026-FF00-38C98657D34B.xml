@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="costcenter_item" directorySegmentName="seg_0" id="4AE742E2-F219-2026-FF00-38C98657D34B">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:52:46 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>C5F17009-482F-2B50-F84F-C799A8BD7AE5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contains</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3E9C3BBC-76C4-3089-2414-82950EE768E0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F7CFCAD1-70A5-C096-46E1-9FFCF0E7A57E</targetEntity>
+<transferable>true</transferable>
+</Relation>

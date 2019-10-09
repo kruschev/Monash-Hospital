@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F139AA3-7A1A-175C-04C2-E4E3E14C6B3C" name="NURSE">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>1C7D0323-3EA5-559F-1A95-0E238FE8F631</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nurseID" id="67E2367C-9454-77A8-F425-21E1B7A69F14">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Nurse ID</commentInRDBMS>
+<generatorID>BCED73E7-5136-A30A-27F3-0490815D7926</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="nurseFName" id="0738D055-FB21-15A1-3CE2-BF732D43042B">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Nurse first name</commentInRDBMS>
+<generatorID>BE8088EF-D2F3-B869-D792-B163BDF1E8C0</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nurseLName" id="5921949F-EE5B-FB96-955A-EFE7373A3FC4">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Nurse last name</commentInRDBMS>
+<generatorID>F9D8A50F-7728-249B-D57E-178085A1272B</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nursePhone" id="0B5D0EFB-2D79-276D-88D6-304CB55C93AB">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 12:21:22 UTC</createdTime>
+<commentInRDBMS>Nurse phone</commentInRDBMS>
+<generatorID>2C6CB687-5514-96EC-62CE-DAB7642AB06C</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nurseCert" id="4B258928-C750-626B-D73C-57B61BB7799B">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 12:21:22 UTC</createdTime>
+<commentInRDBMS>Certification for work with children</commentInRDBMS>
+<generatorID>F9820C75-869A-A0BB-1FC7-892A78FCC8E4</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF78AA10-F320-65FE-ACD5-4BA84598ABA3" name="NURSE_PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>4CFF9429-B40D-EBF0-28F2-9554B50CEF00</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67E2367C-9454-77A8-F425-21E1B7A69F14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C96CD822-C9F8-7025-4917-B31158E9813A" name="BED">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>9AFE1FF3-22C9-9EA6-0829-3BF7EA6CDAC4</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="wardCode" id="8A41595E-8683-2C9F-CC59-7E550B6FAE52">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Ward code</commentInRDBMS>
+<generatorID>B732C036-989C-332A-0D08-855447441E1C</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F896231-0896-CA4E-63CF-C07CB0142B3A" referredColumn="D32F6C3C-7586-F2E1-E7A5-0D3D35F6E88E"/>
+</associations>
+</Column>
+<Column name="bedNum" id="DE8D5704-9A61-15FF-B6DC-4F258BE78A2A">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Bed number</commentInRDBMS>
+<generatorID>55B4A630-8E1C-BAAA-C387-E2BC13B7DB4F</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bedPhone" id="8F89BF89-66DC-3AD9-0EA7-189948615A90">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Bed phone number</commentInRDBMS>
+<generatorID>2FBE194A-0073-7FF1-E8D8-03FB2A0694B5</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bedType" id="B9EB0036-6300-9EB0-1366-A67E5F562531">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Bed type</commentInRDBMS>
+<generatorID>B88FEB06-3513-5E7A-56B8-AA95FD919CA6</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="443C14DA-8351-5560-A604-04FEC8868A13" name="BED_PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>E6771BED-AA21-E9F3-1F08-08A54062C7F1</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE8D5704-9A61-15FF-B6DC-4F258BE78A2A"/>
+<colUsage columnID="8A41595E-8683-2C9F-CC59-7E550B6FAE52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCB40D64-88E8-C392-3E6A-85744CB771DC" name="ward_bed">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>EADCEB47-0084-6655-D9FC-BD066014FEF3</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A41595E-8683-2C9F-CC59-7E550B6FAE52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

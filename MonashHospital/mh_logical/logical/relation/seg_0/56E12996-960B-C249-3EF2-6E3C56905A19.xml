@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="procedure_extraitems" directorySegmentName="seg_0" id="56E12996-960B-C249-3EF2-6E3C56905A19">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:59:58 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>8AF6A56B-C60C-B341-1145-B9A7A98DA50A</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>uses</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D2DB3A53-BF3C-7DAB-2969-50BCDAE3F84B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D871690A-E357-F641-3C7B-71B4529A1E77</targetEntity>
+<transferable>true</transferable>
+</Relation>

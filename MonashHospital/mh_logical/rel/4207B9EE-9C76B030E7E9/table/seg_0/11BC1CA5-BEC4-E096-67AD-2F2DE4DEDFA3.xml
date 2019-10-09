@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11BC1CA5-BEC4-E096-67AD-2F2DE4DEDFA3" name="EXTRA_ITEM">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>D871690A-E357-F641-3C7B-71B4529A1E77</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="patientID" id="256BA110-11FF-2593-DEFD-6D32A5501C85">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Unique patient ID</commentInRDBMS>
+<generatorID>C7560E4B-1F23-57FF-7348-5A173479CE2B</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="procDate" id="90F9DF2D-9CDA-A9A2-EE8E-131ECB25945E">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Date and time procedure is performed</commentInRDBMS>
+<generatorID>3EE971FE-ABA7-F2C1-DEAB-204E20727A00</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F152482-18B5-0510-AA4C-219C9DBA7D77" referredColumn="E7F35DD9-CFAE-FC1B-266F-04DDBAADC8F1"/>
+</associations>
+</Column>
+<Column name="itemCode" id="BA6B2795-2FA4-FE0B-BF8C-B9CA4A53C521">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Item code</commentInRDBMS>
+<generatorID>3C4C37B9-48FF-590C-FFFF-330605C9A5E1</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DED5F137-4A3B-50B6-6753-C94B42F157F9" referredColumn="D8E4DC6F-319E-25ED-CB54-4BA06C1F65C3"/>
+</associations>
+</Column>
+<Column name="itemQuant" id="AD90E6AE-9131-AA49-B153-21A03777F028">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Item&apos;s quantity used for procedure</commentInRDBMS>
+<generatorID>38E03F74-29CA-7C70-A31D-17696213B3EB</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<constraintName>chk_itemQuant</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="itemQuant &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="itemTotalCharge" id="FF04663E-E721-400D-2DC7-5E1511AF6548">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Equals item&apos;s quantity used multiplied by item&apos;s price</commentInRDBMS>
+<generatorID>F3F6775F-4FCC-0B27-946C-68AF1F8A8698</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="itemTotalCharge &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="admissionDate" id="91FCD58C-9C08-C2FC-A325-D99A90BA46FD">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<commentInRDBMS>Date and time of patient&apos;s admission</commentInRDBMS>
+<generatorID>9247AD55-0154-B4E2-5B73-153F80372058</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patientID2" id="34B5E7F9-FA35-2CCC-780C-11B5C43B6BFE">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 12:21:22 UTC</createdTime>
+<commentInRDBMS>Unique patient ID</commentInRDBMS>
+<generatorID>C30E0515-B17A-3C1C-DDDD-AF31960C8E10</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F152482-18B5-0510-AA4C-219C9DBA7D77" referredColumn="6DEAA273-1938-558C-F142-7501AB7BC4B3"/>
+</associations>
+</Column>
+<Column name="admissionDate2" id="CF26DF68-721B-FA88-5F32-1135587BAEA3">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 12:21:22 UTC</createdTime>
+<commentInRDBMS>Date and time of patient&apos;s admission</commentInRDBMS>
+<generatorID>8EA3F4C9-EC78-5DB2-5A81-E16CBA6E91E0</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F152482-18B5-0510-AA4C-219C9DBA7D77" referredColumn="21B411B2-03D1-DC24-8CD7-3EBCE2887BB2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8FF330B-224B-83CA-B399-92AE239E9ED0" name="USED_ITEMS_PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>C989A2F7-4AA9-D824-57BD-AFDBED8EB8CD</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34B5E7F9-FA35-2CCC-780C-11B5C43B6BFE"/>
+<colUsage columnID="90F9DF2D-9CDA-A9A2-EE8E-131ECB25945E"/>
+<colUsage columnID="CF26DF68-721B-FA88-5F32-1135587BAEA3"/>
+<colUsage columnID="BA6B2795-2FA4-FE0B-BF8C-B9CA4A53C521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1D26BDB-13C0-F545-BD86-9475074B112F" name="item_extraitem">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>0EFC5C5D-542C-D3F1-7E6F-66563CCF4489</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA6B2795-2FA4-FE0B-BF8C-B9CA4A53C521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AB0FC12-25AF-E81C-E534-6DED01966056" name="procedure_extraitems">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 08:37:21 UTC</createdTime>
+<generatorID>56E12996-960B-C249-3EF2-6E3C56905A19</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90F9DF2D-9CDA-A9A2-EE8E-131ECB25945E"/>
+<colUsage columnID="34B5E7F9-FA35-2CCC-780C-11B5C43B6BFE"/>
+<colUsage columnID="CF26DF68-721B-FA88-5F32-1135587BAEA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

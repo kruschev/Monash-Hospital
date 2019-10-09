@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="procedureinfo_procedure" directorySegmentName="seg_0" id="3D8E07EA-B085-9D9D-5FD1-5CE9547DB4D1">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:38:14 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>BE003753-39F0-F872-69BC-4A5016F6D071</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>is performed</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC09CDB5-33C5-0EE5-022C-968450A12520</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2DB3A53-BF3C-7DAB-2969-50BCDAE3F84B</targetEntity>
+<transferable>true</transferable>
+</Relation>

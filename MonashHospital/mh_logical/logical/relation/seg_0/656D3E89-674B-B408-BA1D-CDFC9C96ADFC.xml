@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="doctor_admission" directorySegmentName="seg_0" id="656D3E89-674B-B408-BA1D-CDFC9C96ADFC">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:17:28 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<sourcePk>A90C288C-FEC3-548C-83DA-159F1D03501E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>supervises</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4BF59CBC-FD34-6EAF-9DBD-3B13CAC911C5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>54550419-C415-45CC-E97C-79C57B52E6F4</targetEntity>
+<transferable>true</transferable>
+</Relation>

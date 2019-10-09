@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D871690A-E357-F641-3C7B-71B4529A1E77" name="EXTRA ITEM">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-29 18:20:21 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="patientID" id="C30E0515-B17A-3C1C-DDDD-AF31960C8E10">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 11:57:21 UTC</createdTime>
+<commentInRDBMS>Unique patient ID</commentInRDBMS>
+<generatorID>56E12996-960B-C249-3EF2-6E3C56905A19</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>BAD2206B-CDB7-3E7B-C712-63BE79227C15</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procDate" id="3EE971FE-ABA7-F2C1-DEAB-204E20727A00">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:59:58 UTC</createdTime>
+<commentInRDBMS>Date and time procedure is performed</commentInRDBMS>
+<generatorID>56E12996-960B-C249-3EF2-6E3C56905A19</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>6DAC861A-4E52-3467-56B7-CE840C9C71EC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="itemCode" id="3C4C37B9-48FF-590C-FFFF-330605C9A5E1">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:04:37 UTC</createdTime>
+<commentInRDBMS>Item code</commentInRDBMS>
+<generatorID>0EFC5C5D-542C-D3F1-7E6F-66563CCF4489</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>08EC9590-314C-339E-9E2A-91CDF6B52BE9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="itemQuant" id="38E03F74-29CA-7C70-A31D-17696213B3EB">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:08:07 UTC</createdTime>
+<commentInRDBMS>Item&apos;s quantity used for procedure</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<constraintName>chk_itemQuant</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="itemQuant &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="itemTotalCharge" id="F3F6775F-4FCC-0B27-946C-68AF1F8A8698">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 07:08:16 UTC</createdTime>
+<commentInRDBMS>Equals item&apos;s quantity used multiplied by item&apos;s price</commentInRDBMS>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="itemTotalCharge &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="admissionDate" id="8EA3F4C9-EC78-5DB2-5A81-E16CBA6E91E0">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 11:57:21 UTC</createdTime>
+<commentInRDBMS>Date and time of patient&apos;s admission</commentInRDBMS>
+<generatorID>56E12996-960B-C249-3EF2-6E3C56905A19</generatorID>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<referedAttribute>25DFE948-C068-4554-55A8-5399C223E7B7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C989A2F7-4AA9-D824-57BD-AFDBED8EB8CD" name="USED ITEMS PK">
+<createdBy>kr</createdBy>
+<createdTime>2019-04-30 06:59:58 UTC</createdTime>
+<ownerDesignName>mh_logical</ownerDesignName>
+<engineerTo>
+<item key="4207B9EE-4BAA-7224-5DDF-9C76B030E7E9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3EE971FE-ABA7-F2C1-DEAB-204E20727A00</attributeRef>
+<attributeRef>8EA3F4C9-EC78-5DB2-5A81-E16CBA6E91E0</attributeRef>
+<attributeRef>C30E0515-B17A-3C1C-DDDD-AF31960C8E10</attributeRef>
+<attributeRef>3C4C37B9-48FF-590C-FFFF-330605C9A5E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
